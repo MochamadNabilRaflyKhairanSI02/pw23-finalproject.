@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+header {
+    width: 100%;
+    background-color: #0a41c1;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 5px;
+    margin: 20px auto; /* Mengganti margin: auto; */
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: rgb(29, 38, 154);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 0 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box select:focus {
+    border-color: rgb(29, 38, 154);
+}
+
+.user-details .input-box:last-child {
+    width: 100%;
+    margin-top: 45px;
+}
+.user-details .input-box:last-child input {
+    width: calc(100% - 0px);
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: rgb(29, 38, 154);
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 30%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one{
+     background: rgb(29, 38, 154);
+     border-color: #d9d9d9;
+ }
+ #dot-2:checked ~ .category label .two{
+    background: #9b59b6;
+    border-color: #d9d9d9;
+ }
+ #dot-3:checked ~ .category label .three{
+    background: black;
+    border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+    display: none;
+ }
+ form .button{
+    height: 45px;
+    margin: 45px 0;
+    text-align: center;
+ }
+ form .button input{
+    height: 100%;
+    width: 70%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #0a41c1;
+ }
+ form .button input:hover{
+    background: #1154ef;
+ }
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background: #0a41c1;
+    color: #fff;
+    position: none;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+    }
+
+    .card,
+    .statistics {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+ @media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+ }

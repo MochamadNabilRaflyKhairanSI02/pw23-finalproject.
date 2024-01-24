@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #0a41c1;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.terkini {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: gray;
+    height: 50px;
+    font-weight: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-container {
+    display: flex;
+    width: 100%; /* Menyesuaikan lebar */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom di kiri */
+    gap: 10px; /* Ruang antar kotak */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.box h3{
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background-color: rgb(218, 217, 217);
+}
+.slide,
+.card {
+    width: 50%;
+    margin-left: 30px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 15px);
+    justify-content: space-between;
+}
+.card img{
+    height: 170px;
+    align-items: center;
+}
+.card-text h3{
+    margin-right: 30px;
+}
+.card h3{
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    background-color: rgb(181, 181, 181);;
+}
+.konten {
+	max-width: 1200px;
+	margin-left: 10px ;
+	padding: 20px;
+}
+.konten h2{
+    margin-bottom: 20px;
+    background: #0a41c1;
+    color: #fff;
+	max-width: 1200px;
+	margin-left: 0 ;
+	padding: 20px;
+}
+.konten .card h2{
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table h2{
+    margin-top: 30px;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin: 30px;
+    
+}
+.footer-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px; 
+}
+.footer-box p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social a .bx{
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    background:#0a41c1;
+    border-radius: 2rem;
+}
+.social a .bx:hover{
+    background:#5184f9;
+
+}
+.footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box li a{
+    color: var(--text-color);
+}
+.footer-box li a:hover{
+    color: var(--main-color);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.contact span{
+    display: flex;
+    align-items: center;
+}
+.contact i{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background:#0a41c1;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+    }
+
+    .card,
+    .statistics {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

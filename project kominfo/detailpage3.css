@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    background-color: #0a41c1;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+p {
+    margin: 10px;
+    text-align: justify; /* Tambahkan properti untuk meratakan teks */
+}
+
+h2 {
+    margin: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section img {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 300px;
+    height: 100px;
+    height: auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Tambahkan clear: both pada elemen yang ingin diatur posisinya */
+.Deskripsi {
+    clear: both;
+}
+.Deskripsi h2{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Deskripsi li{
+    margin-left: 25px;
+}
+.Deskripsi p {
+    margin-left: 10px;
+    text-align: justify; /* Tambahkan properti untuk meratakan teks */
+}
+.copyright{
+    padding: 5px;
+    text-align: center;
+    background:#0a41c1;
+    color: #fff;
+}
+.copyright p{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+    }
+
+    .card,
+    .statistics {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 375px) {
+    .img{
+        width: 100%;
+        max-width: none;
+    }
+}
